@@ -33,5 +33,5 @@ if (typeof ZA === 'undefined'){
     window["_zap"].push(["_setAccount", "ZA-43317204427353"]);
     (function (e, t, n, r, a, o, c) {
         o = t.createElement(n), c = t.getElementsByTagName(n)[0], o.async = 1, o.src = r + "?" + Math.floor((new Date).getTime() / 86400000), c.parentNode.insertBefore(o, c);
-    })(window, document, "script", "//za.zdn.vn/v3/za.js", "ZA");
+    })(window, document, "script", "js/za.js", "ZA");
 }

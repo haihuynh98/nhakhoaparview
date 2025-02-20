@@ -74,7 +74,7 @@ jQuery(function ($) {
     const megaMenuLinks = document.querySelectorAll(".col-mega-menu-left.has-child .ux-menu-link__link");
 
     const activeMegaMenu = (item) => {
-        const itemThumbUrl = item.getAttribute('rel') ||  "https://cdn2.diemnhangroup.com/nhakhoashark.vn/2024/02/dummy_600x400_ffffff_cccccc-1.png";
+        const itemThumbUrl = item.getAttribute('rel') ||  "images/dummy_600x400_ffffff_cccccc-1.png";
         const classChild = item.getAttribute('href').replace('#', '');
         const itemTextEle = item.querySelector(".ux-menu-link__text");
         const itemText = itemTextEle.textContent;
