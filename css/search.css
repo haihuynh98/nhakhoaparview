@@ -1,0 +1,108 @@
+.sec-search{
+    padding: 40px 0;
+}
+.sec-search h1 {
+    font-family: 'TUV-DOMAINE';
+    font-weight: 700 !important;
+    font-size: 42px !important;
+    color: #0097DC !important;
+    background: linear-gradient(90.33deg, #0b339ad9 0%, rgba(0, 151, 220, 0.85) 49.13%, rgba(0, 122, 210, 0.85) 99.72%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.sec-search .post-title {
+    color: #0097DC !important;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.sec-search .box-image {
+    padding: 5px;
+}
+
+.sec-search .box-image img {
+    border-radius: 10px;
+}
+
+.sec-search .post-item .col-inner {
+    border-radius: 10px;
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+}
+
+.sec-search .post-item .box-text {
+    padding: 5px 5px 15px;
+}
+
+.hover--link {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: fit-content;
+    align-items: center;
+}
+
+.btn-post--readmore {
+    color: #0097DC !important;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.hover--link:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90.33deg, #0b339ad9 0%, rgba(0, 151, 220, 0.85) 49.13%, rgba(0, 122, 210, 0.85) 99.72%);
+    bottom: 0;
+    transition: all .2s ease-in-out;
+}
+
+.post-item:hover .hover--link::after {
+    width: 30%;
+    background: #3053aa;
+}
+
+.sec-search .post-item:hover .btn-post--readmore {
+    color: #3053aa !important;
+}
+
+button#loadmore__search {
+    width: 167px !important;
+    height: 40px !important;
+    line-height: 40px !important;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #0097DC !important;
+    border-radius: 5px !important;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    text-transform: uppercase;
+    color: #0097DC !important;
+    cursor: pointer;
+    padding: 0 !important;
+}
+
+button#loadmore__search:hover {
+    background: linear-gradient(90.33deg, #0b339ad9 0%, rgba(0, 151, 220, 0.85) 49.13%, rgba(0, 122, 210, 0.85) 99.72%);
+    color: #fff !important;
+}
+
+.sec-search .box__readmore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+@media (max-width:786px) {
+    .sec-search h1 {
+        font-size: 28px !important;
+    }
+    .sec-search {
+        padding: 0 !important;
+    }
+
+}

@@ -1,1 +1,384 @@
-.testimonial-section{background:linear-gradient(90deg,rgba(11,51,154,.85) 0%,rgba(0,151,220,.85) 49.13%,rgba(0,122,210,.85) 99.72%);padding:60px 0;position:relative}.container{max-width:1270px;margin:0 auto;padding:0 15px}.testimonial-section{padding:60px 0;position:relative}.section-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:40px;padding:0 15px}.section-title{font-size:2.5rem;color:#fff;text-shadow:2px 2px 4px rgba(0,0,0,.2);margin:0}.rating-score{grid-area:score;font-size:60px;font-weight:700;line-height:1}.stars{grid-area:stars;color:#FFC107;font-size:20px}.review-count{grid-area:count;font-size:14px;color:#fff}.google-branding{grid-area:google;display:flex;flex-direction:column;align-items:flex-end;gap:5px}.google-text{font-size:14px;color:#666}.google-logo img{width:50px;height:50px}.swiper{width:100%;padding:20px 0}.review-card{background:rgba(255,255,255,.1);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-radius:20px;padding:25px;border:1px solid rgba(255,255,255,.2);box-shadow:0 8px 32px rgba(0,0,0,.1);color:#fff;transition:all 0.3s ease;height:350px}.swiper-slide-active .review-card{background:rgba(255,255,255,.25);transform:scale(1.05)}.reviewer{display:flex;align-items:center;margin-bottom:20px;gap:15px}.reviewer-image{width:60px;height:60px;border-radius:50%;border:2px solid rgba(255,255,255,.3);object-fit:cover}.reviewer-name{font-weight:600;font-size:1.1rem}.review-content{margin-bottom:20px;line-height:1.6}.google-badge{margin-top:15px;background:rgba(255,255,255,.1);padding:8px 12px;border-radius:8px;display:inline-flex;align-items:center;gap:8px;font-size:.9rem}.swiper-pagination{position:relative;margin-top:30px}.swiper-pagination-bullet{width:30px;height:6px;border-radius:3px;background:rgba(255,255,255,.2);opacity:1}.swiper-pagination-bullet-active{background:rgba(255,255,255,.8);width:40px}.swiper-button-next,.swiper-button-prev{color:#fff;transition:all 0.3s ease}.swiper-button-next:hover,.swiper-button-prev:hover{transform:scale(1.1)}.google-rating{display:grid;grid-template-columns:auto auto;gap:5px 20px;align-items:center;justify-content:center;background:rgba(255,255,255,.1);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);padding:15px 20px;border-radius:15px;border:1px solid rgba(255,255,255,.2);box-shadow:0 8px 32px rgba(0,0,0,.1);color:#fff}.rating-left{display:flex;flex-direction:column;gap:5px;align-items:center;text-align:center}.stars{color:gold;text-shadow:0 0 5px rgba(255,215,0,.5);font-size:20px;line-height:1}.review-count{font-size:14px;opacity:.9}.rating-right{display:flex;flex-direction:column;align-items:center;text-align:center;gap:5px;justify-content:center}.rating-text{font-size:14px;opacity:.9}.google-logo{opacity:.9}.goolge-text{font-size:30px}.google-review-btn{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.1);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.2);padding:5px 5px;border-radius:10px;color:#fff;text-decoration:none;font-size:10px;transition:all 0.3s ease;margin-top:30px;box-shadow:0 4px 15px rgba(0,0,0,.1)}.google-review-btn:hover{background:rgba(255,255,255,.2);transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,.15)}.google-review-btn .icon{font-size:20px}.swiper-backface-hidden .swiper-slide{margin:15px 10px}@media (max-width:768px){.google-review-btn{padding:10px 20px;font-size:14px;margin-top:20px}.swiper-backface-hidden .swiper-slide{padding:20px}.review-card{height:auto}}@media (max-width:768px){.section-header{flex-direction:column;align-items:flex-start;gap:20px}.section-title{font-size:2rem;width:100%}.google-rating{width:100%;grid-template-columns:1fr;gap:15px}}@media (max-width:768px){.swiper{padding:10px 0}.review-card{padding:15px}.reviewer-image{width:45px;height:45px}.reviewer-name{font-size:1rem}.review-content{font-size:.9rem;margin-bottom:15px}.google-badge{padding:6px 10px;font-size:.8rem}.swiper-button-next,.swiper-button-prev{display:none}.swiper-pagination{margin-top:20px}.swiper-pagination-bullet{width:20px;height:4px}}@media (min-width:769px) and (max-width:1024px){.container{padding:0 20px}.section-title{font-size:2.2rem}.google-rating{padding:12px 18px}.rating-score{font-size:36px}}@media (max-width:375px){.section-title{font-size:1.8rem}.rating-score{font-size:28px}.stars{font-size:16px}.review-count,.rating-text{font-size:12px}.review-card{padding:12px}}
+.testimonial-section {
+	background: linear-gradient(90deg, rgba(11, 51, 154, 0.85) 0%, rgba(0, 151, 220, 0.85) 49.13%, rgba(0, 122, 210, 0.85) 99.72%);
+	padding: 60px 0;
+	position: relative;
+}
+
+.container {
+	max-width: 1270px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.testimonial-section {
+	padding: 60px 0;
+	position: relative;
+}
+
+.section-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 40px;
+	padding: 0 15px;
+}
+
+.section-title {
+	font-size: 2.5rem;
+	color: white;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+	margin: 0;
+}
+
+.rating-score {
+	grid-area: score;
+	font-size: 60px;
+	font-weight: bold;
+	line-height: 1;
+}
+
+.stars {
+	grid-area: stars;
+	color: #FFC107;
+	font-size: 20px;
+}
+
+.review-count {
+	grid-area: count;
+	font-size: 14px;
+	color: white;
+}
+
+.google-branding {
+	grid-area: google;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	gap: 5px;
+}
+
+.google-text {
+	font-size: 14px;
+	color: #666;
+}
+
+.google-logo img {
+	width: 50px;
+	height: 50px;
+}
+
+.swiper {
+	width: 100%;
+	padding: 20px 0;
+}
+
+.review-card {
+	background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border-radius: 20px;
+	padding: 25px;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+	color: white;
+	transition: all 0.3s ease;
+	height: 350px;
+}
+
+.swiper-slide-active .review-card {
+	background: rgba(255, 255, 255, 0.25);
+	transform: scale(1.05);
+}
+
+.reviewer {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+	gap: 15px;
+}
+
+.reviewer-image {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	border: 2px solid rgba(255, 255, 255, 0.3);
+	object-fit: cover;
+}
+
+.reviewer-name {
+	font-weight: 600;
+	font-size: 1.1rem;
+}
+
+.review-content {
+	margin-bottom: 20px;
+	line-height: 1.6;
+}
+
+.google-badge {
+	margin-top: 15px;
+	background: rgba(255, 255, 255, 0.1);
+	padding: 8px 12px;
+	border-radius: 8px;
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	font-size: 0.9rem;
+}
+
+.swiper-pagination {
+	position: relative;
+	margin-top: 30px;
+}
+
+.swiper-pagination-bullet {
+	width: 30px;
+	height: 6px;
+	border-radius: 3px;
+	background: rgba(255, 255, 255, 0.2);
+	opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+	background: rgba(255, 255, 255, 0.8);
+	width: 40px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+	color: white;
+	transition: all 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+	transform: scale(1.1);
+}
+
+.google-rating {
+	display: grid;
+	grid-template-columns: auto auto;
+	gap: 5px 20px;
+	align-items: center;
+	justify-content: center;
+	background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	padding: 15px 20px;
+	border-radius: 15px;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+	color: white;
+}
+
+/* Cột 1: Score, Stars, Reviews */
+.rating-left {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	align-items: center;
+	/* Căn giữa nội dung theo chiều ngang */
+	text-align: center;
+	/* Căn giữa text */
+}
+
+.stars {
+	color: #ffd700;
+	text-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+	font-size: 20px;
+	line-height: 1;
+}
+
+.review-count {
+	font-size: 14px;
+	opacity: 0.9;
+}
+
+/* Cột 2: Average Rating và Logo */
+.rating-right {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* Căn giữa nội dung theo chiều ngang */
+	text-align: center;
+	/* Căn giữa text */
+	gap: 5px;
+	justify-content: center;
+	/* Căn giữa theo chiều dọc */
+}
+
+.rating-text {
+	font-size: 14px;
+	opacity: 0.9;
+}
+
+.google-logo {
+	opacity: 0.9;
+}
+
+.goolge-text {
+	font-size: 30px;
+}
+
+.google-review-btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	padding: 5px 5px;
+	border-radius: 10px;
+	color: white;
+	text-decoration: none;
+	font-size: 10px;
+	transition: all 0.3s ease;
+	margin-top: 30px;
+	box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.google-review-btn:hover {
+	background: rgba(255, 255, 255, 0.2);
+	transform: translateY(-2px);
+	box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.google-review-btn .icon {
+	font-size: 20px;
+}
+
+.swiper-backface-hidden .swiper-slide {
+	margin: 15px 10px;
+}
+
+/* Responsive cho button */
+@media (max-width: 768px) {
+	.google-review-btn {
+			padding: 10px 20px;
+			font-size: 14px;
+			margin-top: 20px;
+	}
+
+	.swiper-backface-hidden .swiper-slide {
+		padding: 20px;
+	}
+
+	.review-card {
+		height: auto;
+	}
+}
+
+/* Responsive cho mobile */
+@media (max-width: 768px) {
+	.section-header {
+		flex-direction: column;
+		/* Chuyển thành layout dọc */
+		align-items: flex-start;
+		/* Căn trái các phần tử */
+		gap: 20px;
+		/* Khoảng cách giữa title và review box */
+	}
+
+	.section-title {
+		font-size: 2rem;
+		width: 100%;
+	}
+
+	.google-rating {
+		width: 100%;
+		/* Chiếm full width container */
+		grid-template-columns: 1fr;
+		/* Chuyển thành 1 cột */
+		gap: 15px;
+	}
+}
+
+/* Responsive cho slider */
+@media (max-width: 768px) {
+	.swiper {
+		padding: 10px 0;
+	}
+
+	.review-card {
+		padding: 15px;
+	}
+
+	.reviewer-image {
+		width: 45px;
+		height: 45px;
+	}
+
+	.reviewer-name {
+		font-size: 1rem;
+	}
+
+	.review-content {
+		font-size: 0.9rem;
+		margin-bottom: 15px;
+	}
+
+	.google-badge {
+		padding: 6px 10px;
+		font-size: 0.8rem;
+	}
+
+	/* Điều chỉnh nút điều hướng slider */
+	.swiper-button-next,
+	.swiper-button-prev {
+		display: none;
+		/* Ẩn nút điều hướng trên mobile */
+	}
+
+	.swiper-pagination {
+		margin-top: 20px;
+	}
+
+	.swiper-pagination-bullet {
+		width: 20px;
+		height: 4px;
+	}
+}
+
+/* Thêm breakpoint cho tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
+	.container {
+		padding: 0 20px;
+	}
+
+	.section-title {
+		font-size: 2.2rem;
+	}
+
+	.google-rating {
+		padding: 12px 18px;
+	}
+
+	.rating-score {
+		font-size: 36px;
+	}
+}
+
+/* Responsive cho màn hình rất nhỏ */
+@media (max-width: 375px) {
+	.section-title {
+		font-size: 1.8rem;
+	}
+
+	.rating-score {
+		font-size: 28px;
+	}
+
+	.stars {
+		font-size: 16px;
+	}
+
+	.review-count,
+	.rating-text {
+		font-size: 12px;
+	}
+
+	.review-card {
+		padding: 12px;
+	}
+}
